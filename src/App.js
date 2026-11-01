@@ -65,8 +65,6 @@ function App() {
             <a href="#telemetry">Simülatör</a>
             <a href="#experience">{t.nav.experience}</a>
             <a href="#projects">{t.nav.projects}</a>
-            <a href="#skills">{t.nav.skills}</a>
-            <a href="#education">{t.nav.education}</a>
             <a href="#contact">{t.nav.contact}</a>
           </nav>
 
@@ -298,109 +296,6 @@ function App() {
                 </div>
               </div>
             ))}
-          </div>
-        </section>
-
-        {/* SKILLS MATRIX */}
-        <section id="skills" className="section-block">
-          <div className="section-header">
-            <span className="section-eyebrow font-mono">{"// CAPABILITIES"}</span>
-            <h2 className="section-title">{t.skills.title}</h2>
-            <p className="section-subtitle">{t.skills.subtitle}</p>
-          </div>
-
-          <div className="skills-category-grid">
-            {t.skills.categories.map(cat => (
-              <div key={cat.id} className="skill-category-card">
-                <div className="category-header">
-                  <h3 className="category-title">{cat.title}</h3>
-                  <p className="category-desc">{cat.description}</p>
-                </div>
-
-                <div className="skill-bars-list">
-                  {cat.skills.map(sk => (
-                    <div key={sk.name} className="skill-bar-item">
-                      <div className="skill-info-row">
-                        <span className="skill-name">{sk.name}</span>
-                        <span className="skill-tag-badge font-mono">{sk.tag}</span>
-                      </div>
-                      <div className="progress-track">
-                        <div
-                          className="progress-fill"
-                          style={{ width: `${sk.level}%` }}
-                        ></div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* EDUCATION & REFERENCES */}
-        <section id="education" className="section-block">
-          <div className="section-header">
-            <span className="section-eyebrow font-mono">{"// CREDENTIALS"}</span>
-            <h2 className="section-title">{t.education.title}</h2>
-            <p className="section-subtitle">{t.education.subtitle}</p>
-          </div>
-
-          <div className="credentials-grid">
-            {/* University Card */}
-            <div className="credential-card uni-card">
-              <div className="cred-badge font-mono">AKADEMİK EĞİTİM</div>
-              <h3 className="cred-title">{t.education.university.name}</h3>
-              <h4 className="cred-sub">{t.education.university.degree}</h4>
-              <div className="cred-meta font-mono">
-                <span>📍 {t.education.university.location}</span>
-                <span>📅 {t.education.university.period}</span>
-                <span className="gpa-pill">{t.education.university.gpa}</span>
-              </div>
-              <p className="cred-note">
-                ⚡ {t.education.university.note}
-              </p>
-            </div>
-
-            {/* Official Reference Card */}
-            <div className="credential-card ref-card">
-              <div className="cred-badge font-mono badge-purple">{t.education.reference.title}</div>
-              <h3 className="cred-title">{t.education.reference.name}</h3>
-              <h4 className="cred-sub">{t.education.reference.role}</h4>
-              <p className="ref-company font-mono">{t.education.reference.company}</p>
-
-              <div className="ref-contact-links">
-                <a href={`mailto:${t.education.reference.email}`} className="ref-link">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                    <polyline points="22,6 12,13 2,6" />
-                  </svg>
-                  <span>{t.education.reference.email}</span>
-                </a>
-                <a href={`tel:${t.education.reference.phone.replace(/\s+/g, '')}`} className="ref-link">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                  </svg>
-                  <span>{t.education.reference.phone}</span>
-                </a>
-              </div>
-            </div>
-
-            {/* Languages Card */}
-            <div className="credential-card lang-card">
-              <div className="cred-badge font-mono badge-emerald">DİL YETKİNLİKLERİ</div>
-              <div className="languages-list">
-                {t.education.languages.map((l, idx) => (
-                  <div key={idx} className="lang-item">
-                    <div className="lang-header">
-                      <span className="lang-name">{l.name}</span>
-                      <span className="lang-level font-mono">{l.level}</span>
-                    </div>
-                    <span className="lang-badge font-mono">{l.badge}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
         </section>
 

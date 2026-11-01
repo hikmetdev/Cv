@@ -631,85 +631,147 @@ body {
   box-shadow: 0 0 14px rgba(0, 240, 255, 0.25);
 }
 
-.telemetry-body-grid {
+.metrics-grid {
   display: grid;
-  grid-template-columns: 380px 1fr;
-  gap: 28px;
-  align-items: start;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 20px;
 }
 
-.radar-wrapper {
+.mission-viewport-wrap {
   position: relative;
-  background: #040811;
-  border: 1px solid rgba(0, 240, 255, 0.25);
+  background: #030712;
+  border: 1px solid rgba(0, 240, 255, 0.3);
   border-radius: var(--radius-md);
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.8), 0 8px 30px rgba(0, 0, 0, 0.6);
+  margin-bottom: 20px;
 }
 
-.radar-canvas {
+.mission-canvas {
   display: block;
   width: 100%;
-  height: 280px;
+  height: 380px;
+  background: #040813;
 }
 
-.radar-overlay-badge {
+.mission-hud-overlay {
   position: absolute;
-  top: 10px;
-  left: 12px;
-  right: 12px;
+  top: 12px;
+  left: 14px;
+  right: 14px;
   display: flex;
   justify-content: space-between;
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
+  align-items: center;
   pointer-events: none;
 }
 
-.badge-tag {
-  background: rgba(0, 240, 255, 0.18);
-  color: var(--accent-cyan);
-  padding: 2px 8px;
+.hud-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(4, 9, 20, 0.85);
+  border: 1px solid rgba(0, 240, 255, 0.35);
+  padding: 4px 12px;
   border-radius: 4px;
-  border: 1px solid rgba(0, 240, 255, 0.3);
+  font-size: 0.72rem;
+  color: var(--accent-cyan);
 }
 
-.badge-hz {
+.hud-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent-cyan);
+  box-shadow: 0 0 8px var(--accent-cyan);
+}
+
+.hud-fps {
+  font-size: 0.72rem;
   color: var(--text-dim);
+  background: rgba(4, 9, 20, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 4px 10px;
+  border-radius: 4px;
 }
 
-.toggle-threat-btn {
-  width: 100%;
-  padding: 9px;
-  border: none;
+.mission-controls-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 12px 16px;
+  background: rgba(8, 14, 26, 0.95);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  align-items: center;
+}
+
+.action-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition);
+  border: 1px solid transparent;
+}
+
+.threat-active-btn {
+  background: rgba(239, 68, 68, 0.2);
+  color: #fca5a5;
+  border-color: rgba(239, 68, 68, 0.5);
+}
+
+.threat-active-btn:hover {
+  background: rgba(239, 68, 68, 0.35);
+  box-shadow: 0 0 14px rgba(239, 68, 68, 0.4);
+}
+
+.threat-inactive-btn {
+  background: rgba(16, 185, 129, 0.2);
+  color: #6ee7b7;
+  border-color: rgba(16, 185, 129, 0.5);
+}
+
+.threat-inactive-btn:hover {
+  background: rgba(16, 185, 129, 0.35);
+  box-shadow: 0 0 14px rgba(16, 185, 129, 0.4);
+}
+
+.action-secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(245, 158, 11, 0.15);
+  color: #fcd34d;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
   font-weight: 700;
   cursor: pointer;
   transition: var(--transition);
 }
 
-.threat-on {
-  background: rgba(239, 68, 68, 0.2);
-  color: #fca5a5;
-  border-top: 1px solid rgba(239, 68, 68, 0.4);
+.action-secondary-btn:hover {
+  background: rgba(245, 158, 11, 0.3);
+  box-shadow: 0 0 14px rgba(245, 158, 11, 0.4);
 }
 
-.threat-on:hover {
-  background: rgba(239, 68, 68, 0.35);
+.copilot-tool-tag {
+  font-size: 0.82rem;
+  color: #c084fc;
 }
 
-.threat-off {
-  background: rgba(16, 185, 129, 0.2);
-  color: #6ee7b7;
-  border-top: 1px solid rgba(16, 185, 129, 0.4);
-}
-
-.telemetry-metrics-col {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+.copilot-tool-tag code {
+  background: rgba(168, 85, 247, 0.15);
+  padding: 3px 8px;
+  border-radius: 4px;
+  color: #e9d5ff;
 }
 
 .metrics-grid {

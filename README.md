@@ -1,45 +1,73 @@
-📄 Personal CV Website
+<div align="center">
 
-This project is a responsive CV (curriculum vitae) website that showcases my personal information, skills, projects, and contact details. It can be used as a portfolio and as a reference for job applications.
+<img src="src/bg.jpg" alt="Savunma ve otonom sistemler" width="100%" />
 
-    Note: Deployed via GitHub Pages.
+# HİKMET ALANLI · PORTFOLYO
 
-📁 Project Structure
+### Otonom sistemler · Robotik · Yapay zekâ · Yazılım mühendisliği
 
-    index.html: Home page
+[![Canlı Site](https://img.shields.io/badge/🌐_Canlı_Site-Ziyaret_et-00c8ff?style=for-the-badge)](https://hikmetdev.github.io/cvSite/)
+[![GitHub](https://img.shields.io/badge/GitHub-hikmetdev-181717?style=for-the-badge&logo=github)](https://github.com/hikmetdev)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profil-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/hikmet-alanl%C4%B1)
 
-    App.css: Custom styles
+<br />
 
-    App.js:  Interactive features
+<img src="https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=111" alt="React 19" />
+<img src="https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat-square&logo=javascript&logoColor=111" alt="JavaScript" />
+<img src="https://img.shields.io/badge/Responsive-Design-7C5CFC?style=flat-square" alt="Responsive design" />
+<img src="https://img.shields.io/badge/Deploy-GitHub%20Pages-222?style=flat-square&logo=githubpages" alt="GitHub Pages" />
 
-    public/: Images, icons, and other media assets
+</div>
 
-✨ Features
+---
 
-    Responsive design (mobile-friendly)
+## ✨ Proje hakkında
 
-    Easily customizable content
+Türkçe ve İngilizce içerik sunan kişisel portfolyo ve CV sitesi. Otonom hava ve kara araçları, robotik, yapay zekâ ve yazılım projelerini tek bir etkileşimli arayüzde bir araya getirir.
 
-    Fast deployment with GitHub Pages
+## 🧭 Öne çıkanlar
 
-🧰 Technologies Used
+| Alan | İçerik |
+| --- | --- |
+| 👋 Profil | Kısa özgeçmiş, uzmanlık alanları ve hızlı bilgiler |
+| 🛰️ Telemetri simülatörü | SİHA için SITL/HSS senaryosu ve İKA için ROS2/LiDAR görünümü |
+| 💼 Deneyim | Stajlar, sorumluluklar ve kullanılan teknolojiler |
+| 🚀 Projeler | Proje açıklamaları, detay pencereleri ve kategori filtreleri |
+| 📬 İletişim | İletişim bilgileri ve e-posta formu |
+| 🌍 Dil seçimi | Türkçe ve İngilizce arayüz |
 
-    HTML5 & CSS3
+## 🛠️ Teknoloji
 
-    JavaScript
+`React` · `JavaScript` · `CSS` · `Create React App` · `GitHub Pages`
 
-    Font Awesome – for icons
+## 🚀 Yerelde çalıştırma
 
-    Google Fonts – for typography
+```bash
+git clone https://github.com/hikmetdev/cvSite.git
+cd cvSite
+npm install
+npm start
+```
 
-    GitHub Pages – for deployment
+Geliştirme sunucusu [http://localhost:3000](http://localhost:3000) adresinde açılır.
 
-📬 Contact
+## 📝 İçerik ve yayınlama
 
-Feel free to reach out for any feedback or collaboration opportunities:
+- Türkçe ve İngilizce site metinleri [`src/data/cvData.js`](src/data/cvData.js) içinde düzenlenir.
+- Bileşenler [`src/components/`](src/components/) ve `src/App.js` altında bulunur.
+- Üretim derlemesi almak için `npm run build` çalıştırılır.
+- GitHub Pages'e yayınlamak için `npm run deploy` kullanılır. Bu komut önce üretim derlemesini oluşturur, ardından `build/` içeriğini `gh-pages` dalına gönderir.
 
-    📧 Email: [hikmetalanli@outlook.com]
+> Kaynak kodun `main` dalına gönderilmesi, GitHub Pages yayınını tek başına güncellemez. Siteyi yayınlamak için `npm run deploy` adımı da gerekir.
 
-    💼 LinkedIn: [https://www.linkedin.com/in/hikmet-alanl%C4%B1-4493b02a4/]
+## 📄 Lisans
 
-    🧑‍💻 GitHub: [https://github.com/hikmetdev]
+Bu depo kişisel portfolyo ve CV sitesi olarak hazırlanmıştır. İçerik ve görseller Hikmet Alanlı'ya aittir.
+
+<div align="center">
+
+### Bir proje veya iş fırsatı için iletişime geçin
+
+[![E-posta](https://img.shields.io/badge/E--posta-halanli025%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:halanli025@gmail.com)
+
+</div>

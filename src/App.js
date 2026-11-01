@@ -58,7 +58,6 @@ function App() {
             <span className="logo-bracket">[</span>
             <span className="logo-name">HIKMET.DEV</span>
             <span className="logo-bracket">]</span>
-            <span className="logo-tag">AI & OTONOM</span>
           </a>
 
           <nav className="nav-links">
@@ -116,11 +115,6 @@ function App() {
         <section id="hero" className="hero-section">
           <div className="hero-grid">
             <div className="hero-text-col">
-              <div className="status-pill">
-                <span className="live-dot-pulse"></span>
-                <span className="status-text font-mono">{t.hero.statusBadge}</span>
-              </div>
-
               <h1 className="hero-title">
                 {t.hero.name}
               </h1>
@@ -136,16 +130,6 @@ function App() {
               <p className="hero-bio">
                 {t.hero.bio}
               </p>
-
-              {/* Quick Engineering Stats */}
-              <div className="hero-stats-grid">
-                {t.hero.quickStats.map((stat, i) => (
-                  <div key={i} className="stat-card">
-                    <span className="stat-val font-mono">{stat.value}</span>
-                    <span className="stat-lbl">{stat.label}</span>
-                  </div>
-                ))}
-              </div>
 
               {/* Action Buttons */}
               <div className="hero-cta-row">
@@ -192,16 +176,6 @@ function App() {
                     alt="Hikmet Alanlı"
                     className="hero-avatar-img"
                   />
-                </div>
-
-                <div className="avatar-floating-tag tag-top">
-                  <span className="tag-icon">🤖</span>
-                  <span className="font-mono">Agentic AI & MCP</span>
-                </div>
-
-                <div className="avatar-floating-tag tag-bottom">
-                  <span className="tag-icon">🛸</span>
-                  <span className="font-mono">ROS2 & SITL SİHA</span>
                 </div>
               </div>
             </div>

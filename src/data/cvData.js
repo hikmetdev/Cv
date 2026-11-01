@@ -28,12 +28,11 @@ export const cvData = {
       contact: 'İletişim'
     },
     interactiveWidget: {
-      title: 'SITL & Agentic AI Telemetri Simülatörü',
-      subtitle: 'ROS2 / ArduPilot / LLM Copilot karar destek akışı demosu',
+      title: 'SITL Telemetri Simülatörü',
+      subtitle: 'ROS2 / ArduPilot karar destek akışı demosu',
       modes: {
         siha: 'İHA Savaşan SİHA (HSS Kaçınma)',
         ika: 'İKA Kara Aracı (ROS2 Sürüş)',
-        copilot: 'Agentic Copilot (MCP / VLM)'
       },
       status: 'SİSTEM ÇALIŞIYOR',
       liveLogsTitle: 'Canlı Olay & Telemetri Kaydı'
@@ -305,12 +304,11 @@ export const cvData = {
       contact: 'Contact'
     },
     interactiveWidget: {
-      title: 'SITL & Agentic AI Telemetry Simulator',
-      subtitle: 'Real-time interactive ROS2 / ArduPilot / LLM Copilot decision flow demo',
+      title: 'SITL Telemetry Simulator',
+      subtitle: 'Real-time interactive ROS2 / ArduPilot decision flow demo',
       modes: {
         siha: 'Combat UAV (HSS Avoidance)',
         ika: 'UGV Ground Vehicle (ROS2 Drive)',
-        copilot: 'Agentic Copilot (MCP / VLM)'
       },
       status: 'SYSTEM ONLINE',
       liveLogsTitle: 'Real-time Event & Telemetry Stream'

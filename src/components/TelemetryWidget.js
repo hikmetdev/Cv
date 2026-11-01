@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 export default function TelemetryWidget({ lang, data }) {
-  const [activeMode, setActiveMode] = useState('siha'); // 'siha' | 'ika' | 'copilot'
+  const [activeMode, setActiveMode] = useState('siha'); // 'siha' | 'ika'
   const [threatActive, setThreatActive] = useState(true);
   const [emergencyManeuver, setEmergencyManeuver] = useState(false);
   const [lidarRange, setLidarRange] = useState(130);
@@ -790,13 +790,6 @@ export default function TelemetryWidget({ lang, data }) {
           >
             🚙 İKA (Araç & ROS2 LiDAR)
           </button>
-          <button
-            type="button"
-            className={`pill-btn ${activeMode === 'copilot' ? 'active' : ''}`}
-            onClick={() => handleModeChange('copilot')}
-          >
-            🧠 Agentic Copilot (VLM & MCP)
-          </button>
         </div>
       </div>
 
@@ -846,7 +839,7 @@ export default function TelemetryWidget({ lang, data }) {
         <div className="mission-hud-overlay">
           <div className="hud-badge font-mono">
             <span className="hud-dot"></span>
-            <span>{activeMode === 'siha' ? 'SİHA SITL SIM: ARDUPILOT + GAZEBO' : (activeMode === 'ika' ? 'İKA ROS2 SİMÜLASYONU: NAV2 COSTMAP' : 'AGENTIC COPILOT GCS HUD')}</span>
+            <span>{activeMode === 'siha' ? 'SİHA SITL SIM: ARDUPILOT + GAZEBO' : 'İKA ROS2 SİMÜLASYONU: NAV2 COSTMAP'}</span>
           </div>
           <div className="hud-fps font-mono">60 FPS // HD TACTICAL</div>
         </div>
@@ -885,11 +878,6 @@ export default function TelemetryWidget({ lang, data }) {
             </>
           )}
 
-          {activeMode === 'copilot' && (
-            <div className="copilot-tool-tag font-mono">
-              MCP ARAÇ: <code>defense_evasion_spline_solver()</code>
-            </div>
-          )}
         </div>
       </div>
 

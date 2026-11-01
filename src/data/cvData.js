@@ -3,8 +3,8 @@ export const cvData = {
     hero: {
       statusBadge: 'Otonom Sistemler & Agentic AI Geliştiricisi',
       name: 'Hikmet Alanlı',
-      title: 'Bilgisayar Mühendisi | Agentic AI & Otonom Sistemler',
-      subheading: 'Savunma Sanayii & Otonom İHA/İKA Sistemleri & LLM Copilot Mimarisi',
+      title: 'Bilgisayar Mühendisi | ',
+      subheading: '',
       bio: 'Selçuk Üniversitesi Bilgisayar Mühendisliği öğrencisiyim. İnnova Bilişim Çözümleri bünyesinde LLM tabanlı Agentic AI, RAG mimarileri, ReAct döngüleri, Model Context Protocol (MCP) ve VLM/YOLO çoklu model entegrasyonu üzerine çalıştım. TEKNOFEST Savaşan İHA (SİHA) ve İKA projelerinde ROS2, ArduPilot SITL ve Gazebo simülasyonları üzerinde Hava Savunma Sistemleri (HSS) kaçınma algoritmaları ve otonom karar mekanizmaları geliştirdim. BTK ve Anayurt Savunma stajlarımla katmanlı mimaride backend RESTful servisleri ve savunma sanayii sistem entegrasyonlarında uçtan uca tecrübe edindim.',
       quickStats: [
         { label: 'Savunma & AI Stajı', value: '3 Dönem' },
@@ -51,7 +51,7 @@ export const cvData = {
           highlights: [
             'LLM tabanlı agentic AI uygulamaları üzerinde çalıştım; RAG ile bilgi tabanından bağlam çeken, tool calling ile harici fonksiyonları çağıran ve ReAct döngüsüyle adım adım akıl yürüten otonom ajanlar geliştirdim.',
             'İHA operatörlerine karar desteği sunan LLM tabanlı copilot projesinde YOLO nesne tespiti çıktılarını, VLM ile üretilen anlık sahne yorumunu ve telemetri verisini tek bir ajan akışında birleştiren mimariyi kurdum.',
-            'ChromaDB ile embedding tabanlı vektör arama, MCP (Model Context Protocol) üzerinden araç entegrasyonu ve PyQt ile masaüstü operatör arayüzü geliştirme çalışmalarında aktif görev aldım.'
+            'ChromaDB ile embedding tabanlı vektör arama, MCP üzerinden araç entegrasyonu ve PyQt ile masaüstü operatör arayüzü geliştirme çalışmalarında aktif görev aldım.'
           ],
           technologies: ['Agentic AI', 'LLM', 'RAG', 'Tool Calling', 'ReAct', 'MCP', 'ChromaDB', 'VLM', 'YOLO', 'PyQt', 'Python']
         },
